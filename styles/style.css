@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --cor-fundo: #E5E5E5;
+    --cor-principal: #0A3871;
+    --cor-fundo-botao: #D8DFE8;
+    --cor-fundo-nenhuma-mensagem: #FFFFFF;
+}
+
+.body{
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+}
+
+.cabecalho{
+    padding: 2% 5%;
+}
+
