@@ -97,6 +97,7 @@ textarea::placeholder {
 
 .decodificador_conteudo_formulario_botao_criptografar:hover {
     background-color: var(--cor-fundo-nenhuma-mensagem);
+    color: var(--cor-principal);
 }
 
 .decodificador_conteudo_formulario_botao_descriptografar {
@@ -113,7 +114,7 @@ textarea::placeholder {
 
 .decodificador_conteudo_formulario_botao_descriptografar:hover {
 
-    background-color: var(--cor-fundo-nenhuma-mensagem);
+    background-color: cadetblue;
 
 }
 
