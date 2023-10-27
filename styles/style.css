@@ -1,22 +1,151 @@
-*{
+@import url('https://fonts.googleapis.com/css2? família= Inter:wght@100;600 &family= Krona+One & family= Montserrat:wght@400;600 & display=swap');
+
+* {
     margin: 0%;
     padding: 0%;
 }
 
-:root{
+:root {
     --cor-fundo: #E5E5E5;
     --cor-principal: #0A3871;
     --cor-fundo-botao: #D8DFE8;
     --cor-fundo-nenhuma-mensagem: #FFFFFF;
+
+    --font-principal: 'Inter', sans-serif;
 }
 
-.body{
+body {
+    height: 100vh;
     box-sizing: border-box;
     background-color: var(--cor-fundo);
     color: var(--cor-principal);
 }
 
-.cabecalho{
-    padding: 2% 5%;
+.cabecalho {
+    padding: 1% 2%;
+
 }
 
+.decodificador {
+    display: flex;
+    gap: 82px;
+    padding: 0% 0% 0% 12%;
+    width: auto;
+    margin: 0% 2%;
+    justify-content: space-between;
+}
+
+
+.decodificador_conteudo {
+    width: 65%;
+    display: flex;
+}
+
+.decodificador_conteudo_formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#decodificar {
+    box-shadow: none;
+    outline: none;
+    border: none;
+    background-color: var(--cor-fundo);
+    width: auto;
+    resize: none;
+
+}
+
+
+.decodificador_conteudo_furmalario_aviso{
+    font-family: var(--font-principal);
+    font-weight: 100;
+    display: flex;
+    
+    
+
+}
+
+textarea::placeholder {
+
+    font-size: 2rem;
+    font-family: var(--font-principal);
+    color: #0A3871;
+    
+}
+.decodificador_conteudo_formulario_botao {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+
+}
+
+.decodificador_conteudo_formulario_botao_criptografar {
+    background-color: var(--cor-principal);
+    direction: none;
+    padding: 3% 20%;
+    border: none;
+    border-radius: 16px;
+    border: 2px solid var(--cor-principal);
+    font-family: var(--font-principal);
+    color: var(--cor-fundo);
+    font-weight: 600;
+}
+
+.decodificador_conteudo_formulario_botao_criptografar:hover {
+    background-color: var(--cor-fundo-nenhuma-mensagem);
+}
+
+.decodificador_conteudo_formulario_botao_descriptografar {
+    background-color: var(--cor-fundo-botao);
+    direction: none;
+    padding: 2% 20%;
+    border: none;
+    border-radius: 16px;
+    border: 2px solid var(--cor-principal);
+    font-family: var(--font-principal);
+    color: var(--cor-principal);
+    font-weight: 600;
+}
+
+.decodificador_conteudo_formulario_botao_descriptografar:hover {
+
+    background-color: var(--cor-fundo-nenhuma-mensagem);
+
+}
+
+
+#decodificador_resultado {
+
+
+    background-color: var(--cor-fundo-nenhuma-mensagem);
+    border-radius: 5%;
+    padding: 5% 1%;
+    width: 35%;
+
+}
+
+.decodificador_resultado_mensagem_nenhuma{
+    font-family: var(--font-principal);
+    font-weight: 600;
+
+}
+
+.decodificador_resultado_mensagem_digite{
+    font-family: var(--font-principal);
+    font-weight: 100;
+}
+
+
+
+.rodape {
+    font-size: 10px;
+    padding: 0.6rem;
+    background-color: var(-);
+    text-align: center;
+
+
+}

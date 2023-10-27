@@ -22,26 +22,34 @@
 
     <main class="decodificador">
         <section class="decodificador_conteudo">
-            <h1 class="decodificador_titulo">Digite seu texto</h1>
+            <form class="decodificador_conteudo_formulario" method="post" autocomplete="on">
+                <label for="decodificar"></label>
 
-            <form class="decodificador_conteudo_formulario" >
-                <input class="decodificador_conteudo_formulario_local_do_texto" type="text">
-                <p class="decodificador_conteudo_furmalario_aviso"><img class="decodificador_conteudo_furmalario_aviso_png"
-                    src="assets/esclamação.png"> Apenas letras minúsculas e sem acento.</p>
-                <input class="decodificador_conteudo_formulario_botao_criptografar" type="button" value="Criptografar"> 
-                <input class="decodificador_conteudo_formulario_botao_descriptografar" type="button" value="Descriptografar">
 
+                <textarea id="decodificar" name="decodificar" rows="27" cols="90" autofocus
+                    placeholder="Digite seu texto" required></textarea>
+
+                <p class="decodificador_conteudo_furmalario_aviso"><img
+                        class="decodificador_conteudo_furmalario_aviso_png" src="assets/esclamação.png"> Apenas letras
+                    minúsculas e sem acento.</p>
+                <div class="decodificador_conteudo_formulario_botao">
+                    <input class="decodificador_conteudo_formulario_botao_criptografar" type="button"
+                        value="Criptografar" onclick="myFunction()">
+                    <input class="decodificador_conteudo_formulario_botao_descriptografar" type="button"
+                        value="Descriptografar">
+                </div>
 
             </form>
-            
+
         </section>
 
-        <section class="decodificador_resultado">
+        <div id="decodificador_resultado">
             <img class="decodificador_resultado_img" src="assets/imagem_pessoa_com_lupa.svg">
             <h2 class="decodificador_resultado_mensagem_nenhuma"> Nenhuma mensagem encontrada </h2>
-            <p class="decodificador_resultado_mensagem_digite"> Digite um texto que você deseja criptografar ou descriptografar. </p>
+            <p class="decodificador_resultado_mensagem_digite"> Digite um texto que você deseja criptografar ou
+                descriptografar. </p>
 
-        </section>
+        </div>
 
 
 
@@ -50,8 +58,17 @@
 
     </main>
 
-    <footer class="rodape"> <p class="rodape_creditos"> Desenvolvido por Wallace Benites </p> </footer>
+    <footer class="rodape">
+        <p class="rodape_creditos"> Desenvolvido por Wallace Benites </p>
+    </footer>
 
 </body>
+
+<script>
+    function myFunction() {
+        document.getElementById("decodificador_resultado").style.display = "none";
+    }
+
+</script>
 
 </html>

@@ -2,6 +2,6 @@
  Status : Em desenvolvimento 
  
 ````
-HTML e CSS 
+html - css - JavaScript
 
 ````
