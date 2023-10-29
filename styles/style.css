@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? família= Inter:wght@100;600 &family= Krona+One & family= Montserrat:wght@400;600 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0%;
@@ -12,6 +12,10 @@
     --cor-fundo-nenhuma-mensagem: #FFFFFF;
 
     --font-principal: 'Inter', sans-serif;
+}
+
+html{
+    height: 100%;
 }
 
 body {
@@ -31,10 +35,11 @@ body {
 .decodificador {
     display: flex;
     gap: 82px;
-    padding: 0% 0% 0% 12%;
-    width: auto;
+    padding: 0% 0% 0% 7%;
+    height: 100%;
     margin: 0% 2%;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -54,16 +59,21 @@ body {
     outline: none;
     border: none;
     background-color: var(--cor-fundo);
-    width: auto;
+    width: 100%;
+    height: 100%;
     resize: none;
+    font-family: var(--font-principal);
+    font-size: 2rem;
+    color: var(--cor-principal);
 
 }
 
 
 .decodificador_conteudo_furmalario_aviso{
     font-family: var(--font-principal);
-    font-weight: 100;
+    font-weight: 200;
     display: flex;
+    font-size: 1rem;
     
     
 
@@ -73,7 +83,7 @@ textarea::placeholder {
 
     font-size: 2rem;
     font-family: var(--font-principal);
-    color: #0A3871;
+    color: var(--cor-principal);
     
 }
 .decodificador_conteudo_formulario_botao {
@@ -125,10 +135,14 @@ textarea::placeholder {
 
 
     background-color: var(--cor-fundo-nenhuma-mensagem);
-    border-radius: 5%;
+    border-radius: 16px;
     padding: 5% 1%;
     width: 35%;
 
+}
+
+.decodificador_resultado_img{
+    width: 90%;
 }
 
 .decodificador_resultado_mensagem_nenhuma{
@@ -139,16 +153,59 @@ textarea::placeholder {
 
 .decodificador_resultado_mensagem_digite{
     font-family: var(--font-principal);
-    font-weight: 100;
+    font-weight: 300;
 }
-
-
 
 .rodape {
-    font-size: 10px;
-    padding: 0.6rem;
+    flex-shrink: 0;
+    font-size: 0.6rem;
+    padding: 1px;
     background-color: var(--cor-fundo);
     text-align: center;
+}
 
+@media (max-width: 1220px){
+
+
+    .cabecalho{
+        padding: 1% 0% 0% 0%;
+    }
+
+    .decodificador{
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .decodificador_conteudo{
+        width: 90%;
+    }
+
+    .decodificador_resultado{
+        width: 90%;
+    }
+
+    .decodificador_resultado_img{
+        display: none;
+    }
+
+    .rodape{
+        display: none;
+    }
+
+
+     @media (max-width: 910px){
+
+        .decodificador_conteudo_formulario_botao{
+            flex-direction: column;
+        }
+
+        .decodificador_resultado_img{
+            display: none;
+        }
+
+    }
 
 }
+
+    
