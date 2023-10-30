@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DECODIFICADOR - WB </title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <nav class="cabecalho_links">
             <a class="cabecalho_links_logo" href="https://portifolio-wallace.vercel.app/index.html">
 
-                <img src="assets/logo_alura.png" alt="Error mas não foi culpa do wallace ">
+                <img src="assets/logo_alura.svg" alt="Error mas não foi culpa do wallace ">
 
             </a>
         </nav>
@@ -22,42 +23,43 @@
 
     <main class="decodificador">
         <section class="decodificador_conteudo">
-            <form class="decodificador_conteudo_formulario" method="post" autocomplete="on">
-                <label for="decodificar"></label>
+            <form class="decodificador_conteudo_formulario" method="post" autocomplete="on" action="js/script.js">
 
-
-                <textarea id="decodificar" name="decodificar" rows="10" cols="90" autofocus
-                    placeholder="Digite seu texto" required></textarea>
+                <label for="decodificar" hidden>Digite seu texto</label>
+                <textarea id="decodificar" name="decodificar" rows="10" cols="90"
+                    placeholder="Digite seu texto"></textarea>
 
                 <p class="decodificador_conteudo_furmalario_aviso"><img
                         class="decodificador_conteudo_furmalario_aviso_png" src="assets/esclamacao.svg"> Apenas letras
                     minúsculas e sem acento.</p>
                 <div class="decodificador_conteudo_formulario_botao">
-                    <input class="decodificador_conteudo_formulario_botao_criptografar" type="button"
-                        value="Criptografar" onclick="myFunction()">
-                    <input class="decodificador_conteudo_formulario_botao_descriptografar" type="button"
-                        value="Descriptografar">
+
+                    <button class="decodificador_conteudo_formulario_botao_criptografar"
+                        id="decodificador_conteudo_formulario_botao_criptografar">
+                        Criptografar 
+                    </button>
+
+                    <button class="decodificador_conteudo_formulario_botao_descriptografar"
+                        id="decodificador_conteudo_formulario_botao_descriptografar"> 
+                        Descriptografar
+                    </button>
+
                 </div>
 
             </form>
 
         </section>
 
-        <section class="decodificador_resultado">
+        <section class="decodificador_resultado" id="decodificador_resultado">
             <div id="decodificador_resultado_sumir">
-                <img class="decodificador_resultado_img" src="assets/imagem_pessoa_com_lupa.svg">
+                <img class="decodificador_resultado_img" src="assets/imagem_pessoa_com_lupa.svg" alt="mulher olhando pro diamante">
                 <h2 class="decodificador_resultado_mensagem_nenhuma"> Nenhuma mensagem encontrada </h2>
                 <p class="decodificador_resultado_mensagem_digite"> Digite um texto que você deseja criptografar ou
                     descriptografar. </p>
-
             </div>
+
+            <p id="decodificador_resultado_decodificado"> </p>
         </section>
-
-
-
-
-
-
     </main>
 
     <footer class="rodape">
@@ -66,11 +68,6 @@
 
 </body>
 
-<script>
-    function myFunction() {
-        document.getElementById("decodificador_resultado_sumir").style.display = "none";
-    }
 
-</script>
 
 </html>
