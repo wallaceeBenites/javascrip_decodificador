@@ -52,6 +52,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 #decodificar {
@@ -155,6 +156,8 @@ textarea::placeholder {
     font-family: var(--font-principal);
     font-weight: 300;
 }
+
+
 
 .rodape {
     flex-shrink: 0;

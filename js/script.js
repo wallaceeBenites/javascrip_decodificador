@@ -1,23 +1,24 @@
-var palavra_para_decodificar = document.querySelector("#decodificar");
-var botao_para_decodificar = document.querySelector("#decodificador_conteudo_formulario_botao_criptografar");
-var botao_para_descriptografar = document.querySelector("#decodificador_conteudo_formulario_botao_descriptografar");
 
-function criptografar(){
-    var nova_frase1 = palavra_para_decodificar.value.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
-    alert(nova_frase1);
-    document.getElementById("decodificador_resultado_decodificado").innerHTML = nova_frase1;
+var captar = "";
+
+
+
+function chamar() {
+
+    captar = document.getElementById('decodificar').value;
+
+    nova_frase = captar.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
+
+    document.getElementById('digito').innerHTML = nova_frase;
 }
-botao_para_decodificar.onclick = criptografar;
 
-function descriptografar(){
-    var nova_frase2 = palavra_para_decodificar.value.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
-    alert(nova_frase2);
+function chamar2() {
+
+    captar = document.getElementById('decodificar').value;
+
+    nova_frase = captar.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
+
+    document.getElementById('digito').innerHTML = nova_frase;
 }
-botao_para_descriptografar.onclick = descriptografar;
 
 
- 
-
-
-
-    
