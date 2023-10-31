@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0%;
     padding: 0%;
 }
 
 :root {
-    --cor-fundo: #E5E5E5;
-    --cor-principal: #0A3871;
-    --cor-fundo-botao: #D8DFE8;
-    --cor-fundo-nenhuma-mensagem: #FFFFFF;
+    --cor-fundo: #000000;
+    --cor-principal: #16FF00;
+    --cor-fundo-botao: #131212;
+    --cor-hover: #FFED00;
+    --cor-fundo-nenhuma-mensagem: #131212;
+
+    --font_titulo: 'Abril Fatface', serif;
 
     --font-principal: 'Inter', sans-serif;
 }
@@ -31,6 +33,21 @@ body {
     padding: 1% 2%;
 
 }
+
+
+
+.cabecalho__menu__link{
+    font-family: var(--font-principal);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor-principal);
+    padding: 0% 2%;
+    
+    
+}
+
+
 
 .decodificador {
     display: flex;
@@ -75,6 +92,7 @@ body {
     font-weight: 200;
     display: flex;
     font-size: 1rem;
+    color: #9B9797;
     
     
 
@@ -127,7 +145,7 @@ textarea::placeholder {
 
 .decodificador_conteudo_formulario_botao_descriptografar:hover {
 
-    background-color: cadetblue;
+    background-color: var(--cor-hover);
 
 }
 
@@ -176,7 +194,7 @@ textarea::placeholder {
 
 .decodificador_resultado_botao_copia:hover{
 
-    background-color: cadetblue;
+    background-color: var(--cor-hover);
 
 }
 
