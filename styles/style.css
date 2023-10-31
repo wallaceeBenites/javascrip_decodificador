@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
@@ -16,7 +17,7 @@
     --font-principal: 'Inter', sans-serif;
 }
 
-html{
+html {
     height: 100%;
 }
 
@@ -36,15 +37,15 @@ body {
 
 
 
-.cabecalho__menu__link{
+.cabecalho__menu__link {
     font-family: var(--font-principal);
     font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--cor-principal);
     padding: 0% 2%;
-    
-    
+
+
 }
 
 
@@ -65,11 +66,11 @@ body {
     display: flex;
 }
 
-.decodificador_conteudo_formulario{
+.decodificador_conteudo_formulario {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
 #decodificar {
@@ -87,14 +88,14 @@ body {
 }
 
 
-.decodificador_conteudo_furmalario_aviso{
+.decodificador_conteudo_furmalario_aviso {
     font-family: var(--font-principal);
     font-weight: 200;
     display: flex;
     font-size: 1rem;
     color: #9B9797;
-    
-    
+
+
 
 }
 
@@ -103,8 +104,9 @@ textarea::placeholder {
     font-size: 2rem;
     font-family: var(--font-principal);
     color: var(--cor-principal);
-    
+
 }
+
 .decodificador_conteudo_formulario_botao {
 
     display: flex;
@@ -160,27 +162,27 @@ textarea::placeholder {
 
 }
 
-#digito{
+#digito {
     font-size: 2rem;
     font-family: var(--font-principal);
 }
 
-.decodificador_resultado_img{
+.decodificador_resultado_img {
     width: 90%;
 }
 
-.decodificador_resultado_mensagem_nenhuma{
+.decodificador_resultado_mensagem_nenhuma {
     font-family: var(--font-principal);
     font-weight: 600;
 
 }
 
-.decodificador_resultado_mensagem_digite{
+.decodificador_resultado_mensagem_digite {
     font-family: var(--font-principal);
     font-weight: 300;
 }
 
-.decodificador_resultado_botao_copia{
+.decodificador_resultado_botao_copia {
     background-color: var(--cor-fundo-botao);
     border-radius: 16px;
     padding: 6% 25%;
@@ -192,7 +194,7 @@ textarea::placeholder {
     margin: 20%;
 }
 
-.decodificador_resultado_botao_copia:hover{
+.decodificador_resultado_botao_copia:hover {
 
     background-color: var(--cor-hover);
 
@@ -201,55 +203,60 @@ textarea::placeholder {
 
 .rodape {
     flex-shrink: 0;
-    font-size: 0.6rem;
     padding: 1px;
     background-color: var(--cor-fundo);
     text-align: center;
 }
 
-@media (max-width: 1220px){
+.rodape_creditos {
+    text-decoration: none;
+    font-size: 0.6rem;
+    font-family: var(--font-principal);
+    color: var(--cor-principal);
+
+}
+
+@media (max-width: 1220px) {
 
 
-    .cabecalho{
+    .cabecalho {
         padding: 1% 0% 9% 2%;
     }
 
-    .decodificador{
+    .decodificador {
         flex-direction: column;
         padding: 0%;
         margin: 0%;
     }
 
-    .decodificador_conteudo{
+    .decodificador_conteudo {
         width: 90%;
     }
 
-    .decodificador_resultado{
+    .decodificador_resultado {
         width: 90%;
     }
-    
 
-    .decodificador_resultado_img{
+
+    .decodificador_resultado_img {
         display: none;
     }
 
-    .rodape{
+    .rodape {
         display: none;
     }
 
 
-     @media (max-width: 910px){
+    @media (max-width: 910px) {
 
-        .decodificador_conteudo_formulario_botao{
+        .decodificador_conteudo_formulario_botao {
             flex-direction: column;
         }
 
-        .decodificador_resultado_img{
+        .decodificador_resultado_img {
             display: none;
         }
 
     }
 
 }
-
-    
