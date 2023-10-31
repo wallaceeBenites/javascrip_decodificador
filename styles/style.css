@@ -142,6 +142,11 @@ textarea::placeholder {
 
 }
 
+#digito{
+    font-size: 2rem;
+    font-family: var(--font-principal);
+}
+
 .decodificador_resultado_img{
     width: 90%;
 }
@@ -187,6 +192,7 @@ textarea::placeholder {
     .decodificador_resultado{
         width: 90%;
     }
+    
 
     .decodificador_resultado_img{
         display: none;
