@@ -51,7 +51,7 @@ function chamar2() {
 
 function copia(){
     navigator.clipboard.writeText(nova_frase).then(() => {
-        alert('Texto Copiado')
+        
     })
 
 }
