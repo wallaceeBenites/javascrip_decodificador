@@ -162,6 +162,23 @@ textarea::placeholder {
     font-weight: 300;
 }
 
+.decodificador_resultado_botao_copia{
+    background-color: var(--cor-fundo-botao);
+    border-radius: 16px;
+    padding: 6% 25%;
+    border: 2px solid var(--cor-principal);
+    font-family: var(--font-principal);
+    color: var(--cor-principal);
+    font-weight: 600;
+    align-items: center;
+    margin: 20%;
+}
+
+.decodificador_resultado_botao_copia:hover{
+
+    background-color: cadetblue;
+
+}
 
 
 .rodape {

@@ -11,10 +11,18 @@ function chamar() {
 
     document.getElementById('digito').innerHTML = nova_frase;
 
+
     if (captar == "") {
         document.getElementById("sumir").style.display = "block";
     } else {
         document.getElementById("sumir").style.display = "none";
+    }
+
+
+    if (captar == "") {
+        document.getElementById("aparecer").style.display = "none";
+    } else {
+        document.getElementById("aparecer").style.display = "block";
     }
 }
 
@@ -31,4 +39,19 @@ function chamar2() {
     } else {
         document.getElementById("sumir").style.display = "none";
     }
+    
+
+    if (captar == "") {
+        document.getElementById("aparecer").style.display = "none";
+    } else {
+        document.getElementById("aparecer").style.display = "block";
+    }
+}
+
+
+function copia(){
+    navigator.clipboard.writeText(nova_frase).then(() => {
+        alert('Texto Copiado')
+    })
+
 }
