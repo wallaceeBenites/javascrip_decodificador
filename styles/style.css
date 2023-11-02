@@ -17,7 +17,7 @@
     --font-principal: 'Inter', sans-serif;
 }
 
-html {
+html,body {
     height: 100%;
 }
 
@@ -51,6 +51,7 @@ body {
 
 
 .decodificador {
+    position: relative; 
     display: flex;
     gap: 82px;
     padding: 0% 0% 0% 7%;
