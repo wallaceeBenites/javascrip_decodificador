@@ -1,10 +1,20 @@
-<h1> Decodificador de Texto #challengeonedecodificador5</h1>
- Status : Concluído
+# Decodificador de Texto | #challengeonedecodificador5
+
+Status : Concluído
  
+---
+## Sobre o Projeto
+- Criptografar e descriptografar 
+- Desafio da ONE - Oracle Next Education
+ ## Tecnologias Utilizadas
 ````
-html - css - JavaScript
+HTML - CSS - JavaScript 
 
 ````
+Imagem Previa 
+---
+<img src="/assets/previa.png">
+
 GitHub Pages
 ---
 --> https://wallaceebenites.github.io/Decodificador/
