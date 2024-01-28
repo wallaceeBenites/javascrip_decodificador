@@ -17,7 +17,7 @@ Imagem Previa
 
 GitHub Pages
 ---
---> https://wallaceebenites.github.io/Decodificador/
+--> [https://wallaceebenites.github.io/Decodificador/](https://wallaceebenites.github.io/javascrip_decodificador/)
 
 Badge pela Conclusão do Desafio
 ---
